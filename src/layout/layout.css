@@ -1,0 +1,26 @@
+/*header.js*/
+.header-container-style {
+    background: #1D1A6B;
+    border-radius: 35px;
+    max-width: 90%;
+}
+
+.cormorant-logo-text-style {
+    font-family: "Cormorant", serif;
+    font-weight: 400;
+    font-size: 60px;
+    text-decoration: none;
+}
+
+.nav-underline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/*footer.js*/
+.footer-container-style {
+    background: #1D1A6B;
+    color: #FFFFFF;
+}
