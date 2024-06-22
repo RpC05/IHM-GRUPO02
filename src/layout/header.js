@@ -1,5 +1,3 @@
-import React from 'react'; 
-
 const Header = () => {
     return <header>
         <nav class="navbar navbar-expand-lg " >
@@ -25,7 +23,7 @@ const Header = () => {
                                     </a>
                                 </span>
                             </li>
-                            <img src="{logo}" ></img>
+                            <img id="logo" src="/images/logo.png" ></img>
                             <li class="nav-item"> 
                                 <span class=" navbar-brand">
                                     <a class="cormorant-logo-text-style text-light">

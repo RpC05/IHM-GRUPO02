@@ -19,27 +19,48 @@
     width: 100%;
 }
 
+#logo {
+    width: 5%;
+    height: 5%;
+}
+
 /*footer.js*/
 .footer-container-style {
     background: #1D1A6B;
     color: #FFFFFF;
 }
 
-/*basic.js*/
+/*main.js*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
 .svg-container {
     position: relative;
     width: 356.25px;
-    height: 356.25px;   
+    height: 356.25px;
+    overflow: visible;
 }
 
 .RadarChart__scale {
     stroke: grey;
-    stroke-width: 1; 
+    stroke-width: 1;
+    fill: none;
 }
 
 .RadarChart__axis {
     stroke: grey;
-    stroke-width: 1; 
+    stroke-width: 1;
+    fill: none;
 }
 
 .RadarChart__shape {
@@ -72,7 +93,7 @@
     height: 24px;
 }
 
-.icon-description p { 
+.icon-description p {
     padding: 5px;
     border-radius: 5px;
     margin-top: 5px;
@@ -80,11 +101,11 @@
 }
 
 .stop-0 {
-    stop-color: rgb(99,102,241);
+    stop-color: rgb(99, 102, 241);
     stop-opacity: 1;
 }
 
 .stop-100 {
-    stop-color: rgb(163,101,241);
+    stop-color: rgb(163, 101, 241);
     stop-opacity: 1;
 }
