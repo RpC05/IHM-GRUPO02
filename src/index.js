@@ -6,7 +6,7 @@ import {
     RouterProvider,
 } from "react-router-dom"; 
 import Basic from './layout/basic.js'; 
-//import Home from './home/home.js';
+import Home from './home/home.js';
 //import Catalogo from './catalogo/catalogo.js';
 import Comparacion from './comparacion/components/comparisionMain.js';
 //import Conocenos from './conocenos/conocenos.js';
@@ -28,10 +28,10 @@ const router = createBrowserRouter([
                 path: 'Home',
                 element: <Home/>
             }, 
-            {
+            /*{
                 path: 'Catalogo',
                 element: <Catalogo/>,
-                children: [
+                /*children: [
                     {
                         path: 'Comparacion',
                         element: <Comparacion/>,
@@ -49,6 +49,10 @@ const router = createBrowserRouter([
             {
                 path: 'Politicas de Privacidad',
                 element: <Politicas/>
+            },*/
+            {
+                path: 'Comparacion',
+                element: <Comparacion/>
             },
         ],
     }, 

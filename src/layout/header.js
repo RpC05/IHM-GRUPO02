@@ -7,18 +7,18 @@ const Header = () => {
                         <ul class="nav nav-underline">
                             <li class="nav-item">
                                 <span class=" navbar-brand fs-6">
-                                    <a href="https://idiomas.upao.edu.pe"
+                                    <a href=""
                                         class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                                        <i data-feather="globe" class="me-2 mb-2"></i>
+                                        <i data-feather="gift" class="me-2 mb-2"></i>
                                         NOVEDADES
                                     </a>
                                 </span>
                             </li>
                             <li class="nav-item">
                                 <span class=" navbar-brand fs-6">
-                                    <a href="https://upao.info/bolsadetrabajo/"
+                                    <a href=""
                                         class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                                        <i data-feather="briefcase" class="me-2 mb-2"></i>
+                                        <i data-feather="smartphone" class="me-2 mb-2"></i>
                                         CATÁLOGO
                                     </a>
                                 </span>
@@ -34,18 +34,18 @@ const Header = () => {
 
                             <li class="nav-item">
                                 <span class=" navbar-brand fs-6">
-                                    <a href="https://upao.instructure.com/"
+                                    <a href=""
                                         class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                                        <i data-feather="aperture" class="me-2 mb-2"></i>
+                                        <i data-feather="plus-square" class="me-2 mb-2"></i>
                                         CONÓCENOS
                                     </a>
                                 </span>
                             </li>
                             <li class="nav-item" >
                                 <span class=" navbar-brand fs-6">
-                                    <a href="https://campusvirtual.upao.edu.pe/"
+                                    <a href=""
                                         class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                                        <i data-feather="navigation" class="me-2 mb-2"></i>
+                                        <i data-feather="mail" class="me-2 mb-2"></i>
                                         CONTÁCTANOS
                                     </a>
                                 </span>
