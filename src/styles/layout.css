@@ -32,8 +32,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    h1{
+        font-family: "Cormorant", serif;
+    }
 }
-/**Para el tamaño de las listas**/
+/**Para el tamaño de las listas* card.js*/
 .phone-list {
     display: grid; 
     grid-template-columns: repeat(2, 1fr);

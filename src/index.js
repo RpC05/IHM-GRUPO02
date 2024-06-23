@@ -5,7 +5,13 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom"; 
-import Basic from './layout/basic'; 
+import Basic from './layout/basic.js'; 
+//import Home from './home/home.js';
+//import Catalogo from './catalogo/catalogo.js';
+import Comparacion from './comparacion/components/comparisionMain.js';
+//import Conocenos from './conocenos/conocenos.js';
+//import Contactanos from './contactanos/contactanos.js';
+
 
 const feather = require('feather-icons');
 
@@ -19,14 +25,31 @@ const router = createBrowserRouter([
         element: <Basic />,
         children: [
             {
-                path: '',
-                element: <>
-                    <div className="col-md-8"> 
-                    </div>
-                    <div className="col-md-4"> 
-                    </div>
-                </>
+                path: 'Home',
+                element: <Home/>
             }, 
+            {
+                path: 'Catalogo',
+                element: <Catalogo/>,
+                children: [
+                    {
+                        path: 'Comparacion',
+                        element: <Comparacion/>,
+                    },
+                ],
+            },
+            {
+                path: 'Conocenos',
+                element: <Conocenos/>
+            }, 
+            {
+                path: 'Contactanos',
+                element: <Contactanos/>
+            },
+            {
+                path: 'Politicas de Privacidad',
+                element: <Politicas/>
+            },
         ],
     }, 
 ]);

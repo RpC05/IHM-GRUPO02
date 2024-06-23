@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { phones } from '../data/phones.js';
-import '../styles/layout.css';
-import '../styles/components.css';
-import Card from '../components/card.js';
-import Comparison from '../components/comparison.js';
+import '../../styles/layout.css';
+import '../../styles/components.css';
+import Card from './card.js';
+import Comparison from './comparison.js';
 
 
-const Main = () => {
+const comparisionMain = () => {
   const [selectedPhones, setSelectedPhones] = useState([]);
 
   const handleSelect = (phone) => {
@@ -41,4 +41,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default comparisionMain;
