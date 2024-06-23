@@ -5,11 +5,15 @@
     margin-top: 32px;
 }
 
-.phone-details {
+.phone-details { 
     border: 1px solid #ccc;
     padding: 16px;
     text-align: center;
 }
+
+.phone-detail {
+    width: 45%;
+  }
 
 .phone-details img {
     max-width: 150px;

@@ -21,7 +21,8 @@ const Main = () => {
   };
 
   return (
-    <main>
+    <main> 
+      <h1>COMPARACIÓN DE TELÉFONOS MÓVILES</h1>
       <div className="phone-list">
         {phones.map(phone => (
           <Card

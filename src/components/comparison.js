@@ -7,6 +7,10 @@ const Comparison = ({ phone1, phone2 }) => {
 
   return (
     <div className="phone-comparison">
+      <div>
+        <h2>{`${phone1.name} vs ${phone2.name}`}</h2>
+        <p>{`Comparativa lado a lado entre los móviles ${phone1.name} vs ${phone2.name}, diferencias, pros, contras y especificaciones completas. ¿Cuál es mejor?`}</p>
+      </div>
       <div className="phone-details">
         <img src={phone1.image} alt={phone1.name} />
         <h3>{phone1.name}</h3>
