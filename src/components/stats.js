@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/components.css';
 
 const Stats = ({ stats }) => {
-  const { points, dots } = stats; // Asumiendo que stats contiene los puntos del gráfico y los puntos de las estadísticas
+  const { points, dots } = stats; 
 
   return (
     <div className="phone-stats">

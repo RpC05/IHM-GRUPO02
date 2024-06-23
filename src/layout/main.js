@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { phones } from '../data/phones.js';
 import '../styles/layout.css';
+import '../styles/components.css';
 import Card from '../components/card.js';
 import Comparison from '../components/comparison.js';
 
@@ -21,17 +22,19 @@ const Main = () => {
   };
 
   return (
-    <main> 
+    <main>
       <h1>COMPARACIÓN DE TELÉFONOS MÓVILES</h1>
-      <div className="phone-list">
-        {phones.map(phone => (
-          <Card
-            key={phone.id}
-            phone={phone}
-            onSelect={handleSelect}
-            isSelected={selectedPhones.includes(phone)}
-          />
-        ))}
+      <div className='Container-list'>
+        <div className="phone-list">
+          {phones.map(phone => (
+            <Card
+              key={phone.id}
+              phone={phone}
+              onSelect={handleSelect}
+              isSelected={selectedPhones.includes(phone)}
+            />
+          ))}
+        </div>
       </div>
       <Comparison phone1={selectedPhones[0]} phone2={selectedPhones[1]} />
     </main>
