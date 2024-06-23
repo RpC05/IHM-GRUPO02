@@ -4,45 +4,29 @@
     gap: 32px;
     margin-top: 32px;
 }
-
 .phone-details {
     border: 1px solid #ccc;
     padding: 16px;
-    text-align: center;
-}
-
-.phone-detail {
-    width: 45%;
-}
-
+    text-align: center; 
+} 
 .phone-details img {
     max-width: 150px;
     height: auto;
 }
 
-/*card.js*/
-.phone-card {
-    border: 1px solid #ccc;
-    padding: 16px;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-}
-
+/*card.js*/ 
 .phone-card.selected {
-    border: 2px solid #007bff;
+    border: 2px solid #000000;
     background-color: #e6f7ff;
+    transform: rotate(0deg) !important;
 }
-
 .phone-card img {
     max-width: 100px;
     height: auto;
 }
-
 .phone-card input[type="checkbox"] {
-    position: absolute;
-    top: 8px;
-    right: 8px;
+    position: absolute;  
+    opacity: 0;
 }
 /**Para las tarjetas**/
 .Container-list {
@@ -52,11 +36,18 @@
     display: grid;
     place-content: center;
 
-    .phone-card {
+    .phone-card { 
+        border: 1px solid #ccc; 
+        border-top-right-radius: 26px; 
+        border-bottom-left-radius: 26px; 
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+
         max-width: 15rem;
         color: #ffffffda;
         padding: 1.5rem;
-        background-color: #202022;
+        background-color: #1D1A6B;
 
         pointer-events: auto;
 
@@ -66,6 +57,8 @@
 
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center; 
 
         .phone-card h3 {
             position: relative;

@@ -4,21 +4,18 @@
     border-radius: 35px;
     max-width: 90%;
 }
-
 .cormorant-logo-text-style {
     font-family: "Cormorant", serif;
     font-weight: 400;
     font-size: 60px;
     text-decoration: none;
 }
-
 .nav-underline {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
-
 #logo {
     width: 5%;
     height: 5%;
@@ -34,86 +31,75 @@
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
 }
 /**Para el tamaño de las listas**/
 .phone-list {
-    display: grid;
+    display: grid; 
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
-    pointer-events: none;
+    gap: 0.75rem; 
 }
 .phone-list:hover>.phone-card:hover {
     transform: scale(1.15);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px #1D1A6B;
     z-index: 10;
 }
-
 .phone-list:hover>.phone-card:not(:hover) {
     opacity: 0.5;
 }
 /***/
+
 .svg-container {
     position: relative;
     width: 356.25px;
     height: 356.25px;
     overflow: visible;
 }
-
 .RadarChart__scale {
     stroke: grey;
     stroke-width: 1;
     fill: none;
 }
-
 .RadarChart__axis {
     stroke: grey;
     stroke-width: 1;
     fill: none;
 }
-
 .RadarChart__shape {
     fill: url(#blue-gradient);
     fill-opacity: 0.5;
     stroke: url(#blue-gradient);
     stroke-width: 2;
 }
-
 .RadarChart__captions {
     font-size: 12px;
     fill: #333;
 }
-
 .RadarChart__dot {
     fill: #3c59fc;
     stroke: #fff;
     stroke-width: 2;
     r: 4;
 }
-
 .icon-description {
     position: absolute;
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
 .icon-description img {
     width: 24px;
     height: 24px;
 }
-
 .icon-description p {
     padding: 5px;
     border-radius: 5px;
     margin-top: 5px;
     font-size: 12px;
 }
-
 .stop-0 {
     stop-color: rgb(99, 102, 241);
     stop-opacity: 1;
 }
-
 .stop-100 {
     stop-color: rgb(163, 101, 241);
     stop-opacity: 1;
