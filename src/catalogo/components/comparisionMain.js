@@ -6,7 +6,7 @@ import Card from './card.js';
 import Comparison from './comparison.js';
 
 
-const comparisionMain = () => {
+const Comparacion = () => {
   const [selectedPhones, setSelectedPhones] = useState([]);
 
   const handleSelect = (phone) => {
@@ -41,4 +41,4 @@ const comparisionMain = () => {
   );
 };
 
-export default comparisionMain;
+export default Comparacion;

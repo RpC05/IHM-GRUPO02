@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 const Header = () => {
     return <header>
         <nav class="navbar navbar-expand-lg " >
@@ -7,54 +10,55 @@ const Header = () => {
                         <ul class="nav nav-underline">
                             <li class="nav-item">
                                 <span class=" navbar-brand fs-6">
-                                    <a href=""
+                                    <Link to=""
                                         class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
                                         <i data-feather="gift" class="me-2 mb-2"></i>
                                         NOVEDADES
-                                    </a>
+                                    </Link>
                                 </span>
                             </li>
                             <li class="nav-item">
                                 <span class=" navbar-brand fs-6">
-                                    <a href=""
+                                    <Link to="/catalogo"
                                         class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
                                         <i data-feather="smartphone" class="me-2 mb-2"></i>
                                         CATÁLOGO
-                                    </a>
+                                    </Link>
                                 </span>
                             </li>
                             <img id="logo" src="/images/logo.png" ></img>
-                            <li class="nav-item"> 
+                            <li class="nav-item">
                                 <span class=" navbar-brand">
-                                    <a class="cormorant-logo-text-style text-light">
+                                    <Link to="/"
+                                        class="cormorant-logo-text-style text-light">
                                         TECNO ALEX
-                                    </a>
+                                    </Link>
                                 </span>
                             </li>
 
                             <li class="nav-item">
                                 <span class=" navbar-brand fs-6">
-                                    <a href=""
+                                    <Link to=""
                                         class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
                                         <i data-feather="plus-square" class="me-2 mb-2"></i>
                                         CONÓCENOS
-                                    </a>
+                                    </Link>
                                 </span>
                             </li>
                             <li class="nav-item" >
                                 <span class=" navbar-brand fs-6">
-                                    <a href=""
+                                    <Link to=""
                                         class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
                                         <i data-feather="mail" class="me-2 mb-2"></i>
                                         CONTÁCTANOS
-                                    </a>
+                                    </Link>
                                 </span>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div> 
-        </nav> 
+            </div>
+        </nav>
     </header>;
 }
 export default Header;
