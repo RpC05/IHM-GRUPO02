@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/layout.css';
-import './styles/components.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';   
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './styles/layout.css'; 
 import { createRoot } from "react-dom/client";
 import React from 'react';
-import { createBrowserRouter, RouterProvider, } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Basic from './layout/basic.js';
 import Home from './home/home.js';
 import Comparacion from './catalogo/components/comparisionMain.js';

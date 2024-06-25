@@ -4,38 +4,45 @@
     gap: 32px;
     margin-top: 32px;
 }
-.phone-comparison div p{
-    font-family: "Nanum Myeongjo", serif; 
+
+.phone-comparison div p {
+    font-family: "Cormorant", serif;
     font-weight: 500;
 }
-.phone-comparison div h2{
-    font-family:  "Nanum Myeongjo", serif; 
+
+.phone-comparison div h2 {
+    font-family: "Cormorant", serif;
     font-weight: 700;
 }
+
 .phone-details {
     border: 1px solid #ccc;
     padding: 16px;
-    text-align: center; 
-} 
+    text-align: center;
+}
+
 .phone-details img {
     max-width: 150px;
     height: auto;
 }
 
-/*card.js*/ 
+/*card.js*/
 .phone-card.selected {
     border: 2px solid #000000;
     background-color: #1e1d42 !important;
     transform: rotate(0deg) !important;
 }
+
 .phone-card img {
     max-width: 100px;
     height: auto;
 }
+
 .phone-card input[type="checkbox"] {
-    position: absolute;  
+    position: absolute;
     opacity: 0;
 }
+
 /**Para las tarjetas**/
 .Container-list {
     height: 100%;
@@ -44,17 +51,17 @@
     display: grid;
     place-content: center;
 
-    .phone-card { 
-        border: 2px solid #ccc; 
-        border-top-right-radius: 26px; 
-        border-bottom-left-radius: 26px; 
+    .phone-card {
+        border: 1px solid #ccc;
+        border-top-right-radius: 26px;
+        border-bottom-left-radius: 26px;
         text-align: center;
         cursor: pointer;
         position: relative;
 
         max-width: 15rem;
         color: #ffffffda;
-        font-family: "Cormorant", serif; 
+        font-family: "Cormorant", serif;
         padding: 1.5rem;
         background-color: #1D1A6B;
 
@@ -65,26 +72,40 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
 
         .phone-card h3 {
             position: relative;
+
             &::before {
                 content: "";
                 height: 1rem;
                 width: 1rem;
-                border-radius: 50%; 
+                border-radius: 50%;
                 background-color: transparent;
 
                 position: absolute;
                 right: 0;
             }
         }
+
         &:nth-child(even) {
-            transform: translateY(8px); 
+            transform: translateY(8px);
         }
+
         &:nth-child(n) {
-            transform: rotate(-5deg); 
+            transform: rotate(-5deg);
         }
     }
+}
+
+/*stats.js*/
+.RadarChart__tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    pointer-events: none;
+    /* Evita que el tooltip afecte los eventos del ratón */
 }

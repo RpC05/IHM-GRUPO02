@@ -42,3 +42,5 @@ const Comparacion = () => {
 };
 
 export default Comparacion;
+
+ 

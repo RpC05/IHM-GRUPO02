@@ -1,14 +1,20 @@
 
+import { Outlet } from "react-router-dom";
 import Header from "./header";
 import Footer from "./footer";
 
-const Basic = () => {
+const Basic = ({ children }) => {
     return (
         <>
-            <Header />
-            <div>THIS IS THE BASIC COMPONENT</div>
-
-            <Footer />
+            {children ? children : ( /* evita que el header y footer se dupliqen*/
+                <>
+                    <Header />
+                    <div className="row justify-content-around" >
+                        <Outlet></Outlet>
+                    </div>
+                    <Footer />
+                </>
+            )}
         </>
     );
 }

@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../styles/layout.css';
 
 const Stats = ({ stats }) => {
-  const { points, dots } = stats; 
+  const { points, dots } = stats;
+  const [score, setScore] = useState(null); // Estado para almacenar el puntaje
+
+  // Función para manejar el hover sobre un punto
+  const handleMouseOver = (index) => {
+    // Obtener el puntaje del punto correspondiente
+    if (dots[index] && dots[index].score) {
+      setScore(dots[index].score);
+    }
+  };
+
+  // Función para manejar el mouse fuera del punto
+  const handleMouseOut = () => {
+    setScore(null); // Reiniciar el puntaje cuando el mouse sale del punto
+  };
 
   return (
     <div className="phone-stats">
@@ -48,11 +62,23 @@ const Stats = ({ stats }) => {
           </g>
           <g>
             {dots.map((dot, index) => (
-              <circle key={index} cx={dot.cx} cy={dot.cy} className="RadarChart__dot"></circle>
+              <circle
+                key={index}
+                cx={dot.cx}
+                cy={dot.cy}
+                className="RadarChart__dot"
+                onMouseOver={() => handleMouseOver(index)}
+                onMouseOut={handleMouseOut}
+              ></circle>
             ))}
           </g>
         </g>
       </svg>
+      {score !== null && (
+        <div className="score-tooltip">
+          Puntaje: {score}
+        </div>
+      )}
     </div>
   );
 };
