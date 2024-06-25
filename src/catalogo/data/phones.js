@@ -4,10 +4,10 @@ export const phones = [
     name: 'Honor 20 Pro',
     image: '/images/Honor200Pro.jpg',
     specs: {
-      screen: '6.26 inches',
-      battery: '4000 mAh',
-      camera: '48 MP',
-      processor: 'Kirin 980',
+      Pantalla: '6.26 pulgadas',
+      Batería: '4000 mAh',
+      Cámara: '48 MP',
+      Procesador: 'Kirin 980',
     },
     stats: {
       points: [ /*dibujo*/
@@ -37,10 +37,10 @@ export const phones = [
     name: 'Honor Magic 6 Pro',
     image: '/images/honorMagic6Pro.jpg',
     specs: {
-      screen: '6.57 inches',
-      battery: '4500 mAh',
-      camera: '50 MP',
-      processor: 'Kirin 9000',
+      Pantalla: '6.57 pulgadas',
+      Batería: '4500 mAh',
+      Cámara: '50 MP',
+      Procesador: 'Kirin 9000',
     },
     stats: {
       points: [

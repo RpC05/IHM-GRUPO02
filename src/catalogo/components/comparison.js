@@ -7,33 +7,41 @@ const Comparison = ({ phone1, phone2 }) => {
 
   return (
     <div className="phone-comparison">
-      <div>
-        <h2>{`${phone1.name} vs ${phone2.name}`}</h2>
-        <p>{`Comparativa lado a lado entre los móviles ${phone1.name} vs ${phone2.name}, diferencias, pros, contras y especificaciones completas. ¿Cuál es mejor?`}</p>
-      </div>
-      <div className="phone-details">
-        <img src={phone1.image} alt={phone1.name} />
-        <h3>{phone1.name}</h3>
-        <ul>
-          {Object.keys(phone1.specs).map((key) => (
-            <li key={key}>
-              {key}: {phone1.specs[key]}
-            </li>
-          ))}
-        </ul>
-        <Stats stats={phone1.stats} />
-      </div>
-      <div className="phone-details">
-        <img src={phone2.image} alt={phone2.name} />
-        <h3>{phone2.name}</h3>
-        <ul>
-          {Object.keys(phone2.specs).map((key) => (
-            <li key={key}>
-              {key}: {phone2.specs[key]}
-            </li>
-          ))}
-        </ul>
-        <Stats stats={phone2.stats} />
+      <div className="container text-center">
+        <div>
+          <h2>{`${phone1.name} vs ${phone2.name}`}</h2>
+          <p>{`Comparativa lado a lado entre los móviles ${phone1.name} vs ${phone2.name}, diferencias, pros, contras y especificaciones completas. ¿Cuál es mejor?`}</p>
+        </div>
+        <div className="row align-items-center">
+          <div className="col">
+            <div className="phone-details">
+              <img src={phone1.image} alt={phone1.name} />
+              <h3>{phone1.name}</h3>
+              <ul>
+                {Object.keys(phone1.specs).map((key) => (
+                  <li key={key}>
+                    {key}: {phone1.specs[key]}
+                  </li>
+                ))}
+              </ul>
+              <Stats stats={phone1.stats} />
+            </div>
+          </div>
+          <div className="col">
+            <div className="phone-details">
+              <img src={phone2.image} alt={phone2.name} />
+              <h3>{phone2.name}</h3>
+              <ul>
+                {Object.keys(phone2.specs).map((key) => (
+                  <li key={key}>
+                    {key}: {phone2.specs[key]}
+                  </li>
+                ))}
+              </ul>
+              <Stats stats={phone2.stats} />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
