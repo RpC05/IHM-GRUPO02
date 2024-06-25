@@ -1,10 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/layout.css';
+import './styles/components.css';
 import { createRoot } from "react-dom/client";
+import React from 'react';
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import Basic from './layout/basic.js';
 import Home from './home/home.js';
-import Catalogo from './catalogo/components/comparisionMain.js';
+import Comparacion from './catalogo/components/comparisionMain.js';
 //import Conocenos from './conocenos/conocenos.js';
 //import Contactanos from './contactanos/contactanos.js';
 
@@ -25,7 +27,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/catalogo',
-                element: <Catalogo />,
+                element: <Comparacion  />,
             },/*
             {
                 path: 'Conocenos',
