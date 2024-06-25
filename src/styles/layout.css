@@ -3,6 +3,7 @@
     background: #1D1A6B;
     border-radius: 35px;
     max-width: 90%;
+    margin-bottom: 15px;
 }
 .cormorant-logo-text-style {
     font-family: "Cormorant", serif;
@@ -25,6 +26,7 @@
 .footer-container-style {
     background: #1D1A6B;
     color: #FFFFFF;
+    margin-top: 15px;
 }
 
 /*main.js*/

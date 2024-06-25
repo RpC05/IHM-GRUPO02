@@ -7,14 +7,12 @@ const Home = () => {
     return (
         <Basic>
             <home>
-                <h2>Descubre la tecnología</h2>
-
                 <div className="container text-center">
+                    <h2>Descubre la tecnología</h2>
                     <div className="row align-items-center">
                         <div className="col">
                             <Carousel1 />
                         </div>
-                        
                         <div className="col">
                             <Carousel2 />
                         </div>
@@ -24,5 +22,4 @@ const Home = () => {
         </Basic>
     );
 }
-
 export default Home;

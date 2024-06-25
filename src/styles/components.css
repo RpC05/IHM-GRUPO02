@@ -25,7 +25,9 @@
     max-width: 150px;
     height: auto;
 }
-
+.phone-details h3 {
+    font-family: "Cormorant", serif; 
+}
 .phone-details ul {
     font-family: "Cormorant", serif;
     list-style-type: none;
@@ -46,6 +48,11 @@
     position: absolute;
     opacity: 0;
 }
+.phone-card h3{
+    font-family: "Cormorant", serif;
+    font-size: 20px;
+    margin: 5px;
+}
 
 /**Para las tarjetas**/
 .Container-list {
@@ -56,7 +63,7 @@
     place-content: center;
 
     .phone-card {
-        border: 1px solid #ccc;
+        border: 1px solid #ccc; 
         border-top-right-radius: 26px;
         border-bottom-left-radius: 26px;
         text-align: center;
@@ -66,6 +73,7 @@
         max-width: 15rem;
         color: #ffffffda;
         font-family: "Cormorant", serif;
+        
         padding: 1.5rem;
         background-color: #1D1A6B;
 
@@ -79,14 +87,14 @@
         align-items: center;
 
         .phone-card h3 {
-            position: relative;
+            position: relative;  
 
-            &::before {
+            &::before { 
                 content: "";
                 height: 1rem;
                 width: 1rem;
                 border-radius: 50%;
-                background-color: transparent;
+                background-color: transparent; 
 
                 position: absolute;
                 right: 0;
@@ -181,7 +189,7 @@
     border-top: none;
     box-sizing: border-box; 
     display: inline;
-    height: 34px;
+    height: 37px;
     justify-content: center;
     margin: 0 6px;
     padding: 5px;   
