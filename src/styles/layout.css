@@ -7,7 +7,7 @@
 }
 .cormorant-logo-text-style {
     font-family: "Cormorant", serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 60px;
     text-decoration: none;
 }
@@ -28,27 +28,3 @@
     color: #FFFFFF;
     margin-top: 15px;
 }
-
-/*main.js*/
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    h1{
-        font-family: "Cormorant", serif;
-    }
-}
-/**Para el tamaño de las listas* card.js*/
-.phone-list {
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem; 
-}
-.phone-list:hover>.phone-card:hover {
-    transform: scale(1.15);
-    box-shadow: 0 0 10px #1D1A6B;
-    z-index: 10;
-}
-.phone-list:hover>.phone-card:not(:hover) {
-    opacity: 0.5;
-} 

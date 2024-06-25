@@ -2,48 +2,64 @@
 .phone-comparison {
     display: flex;
     gap: 32px;
-    margin-top: 32px;
+    margin-top: 32px; 
 }
-
 .phone-comparison div p {
     font-family: "Cormorant", serif;
     font-weight: 500;
-    font-size: 18.5px;
+    font-size: 18.5px; 
 }
-
 .phone-comparison div h2 {
     font-family: "Cormorant", serif;
-    font-weight: 700;
+    font-weight: 520; 
+    color: #1D1A6B;
 }
-
 .phone-details {
     border: 1px solid #ccc;
-    text-align: center;
+    text-align: center; 
+    height: 100vh; 
 }
-
+.phone-details img{ 
+    margin-top: 15px;
+}
 .phone-details img {
     max-width: 150px;
-    height: auto;
+    height: auto; 
 }
 .phone-details h3 {
     font-family: "Cormorant", serif; 
+    margin-top: 5px;   
 }
 .phone-details ul {
     font-family: "Cormorant", serif;
-    list-style-type: none;
+    list-style-type: none; 
+} 
+#col-phone-details{ 
+    height: 100vh;
 }
 
-/*card.js*/
+/*main.js*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    h1{
+        font-family: "Cormorant", serif;
+        font-weight: 520; 
+        color: #1D1A6B;
+    }
+}
+
+/*******************card.js*********************/
 .phone-card.selected {
     background-color: #1e1d42 !important;
-    transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;  
 }
-
 .phone-card img {
     max-width: 100px;
-    height: auto;
+    height: auto; 
+    border-radius: 10px;
 }
-
 .phone-card input[type="checkbox"] {
     position: absolute;
     opacity: 0;
@@ -51,10 +67,8 @@
 .phone-card h3{
     font-family: "Cormorant", serif;
     font-size: 20px;
-    margin: 5px;
+    margin: 5px; 
 }
-
-/**Para las tarjetas**/
 .Container-list {
     height: 100%;
     width: 100%;
@@ -94,8 +108,7 @@
                 height: 1rem;
                 width: 1rem;
                 border-radius: 50%;
-                background-color: transparent; 
-
+                background-color: transparent;  
                 position: absolute;
                 right: 0;
             }
@@ -110,14 +123,29 @@
         }
     }
 }
+/**Para el tamaño de las listas**/
+.phone-list {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem; 
+}
+.phone-list:hover>.phone-card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px #1D1A6B;
+    z-index: 10;
+}
+.phone-list:hover>.phone-card:not(:hover) {
+    opacity: 0.5;
+}  
+/****************************************/
 
-/*stats.js*/
+/******stats.js******/
 
 .svg-container {
     position: relative;
     width: 356.25px;
     height: 356.25px;
-    overflow: visible;
+    overflow: visible; 
 }
 
 .RadarChart__scale {
@@ -125,74 +153,56 @@
     stroke-width: 1;
     fill: none;
 }
-
 .RadarChart__axis {
     stroke: grey;
     stroke-width: 1;
     fill: none;
 }
-
 .RadarChart__shape {
     fill: url(#blue-gradient);
     fill-opacity: 0.5;
     stroke: url(#blue-gradient);
     stroke-width: 2;
 }
-
 .RadarChart__captions {
     font-size: 12px;
-    fill: #333;
-}
-
+    fill: #333; 
+    border: 1px black solid;
+} 
 .RadarChart__dot {
     fill: #3c59fc;
     stroke: #fff;
     stroke-width: 2;
-    r: 4;
+    r: 4; 
 }
-
-.icon-description {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.icon-description img {
-    width: 24px;
-    height: 24px;
-}
-
-.icon-description p {
-    padding: 5px;
-    border-radius: 5px;
-    margin-top: 5px;
-    font-size: 12px;
-}
-
 .stop-0 {
     stop-color: rgb(99, 102, 241);
-    stop-opacity: 1;
+    stop-opacity: 1; 
 }
-
 .stop-100 {
     stop-color: rgb(163, 101, 241);
     stop-opacity: 1;
 }
 
-.VsIcon__icon___3m84T { 
-    fill: black;
-
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
+.RadarChart__groupButtons{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.VsIcon__icon___3m84T {   
+    background-color: #f4f4f4; 
     border-bottom: 2px solid #888;
-    border-radius: .375rem;
-    border-top: none;
+    border-radius: .375rem; 
     box-sizing: border-box; 
     display: inline;
     height: 37px;
-    justify-content: center;
-    margin: 0 6px;
-    padding: 5px;   
-    position: relative;
     width: 36px; 
+    justify-content: center; 
+    position: relative; 
+    margin-top: 2px;
 } 
+.VsIcon__icon___3m84T svg{ 
+    padding: 3px;
+}
