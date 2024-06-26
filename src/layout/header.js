@@ -9,10 +9,10 @@ const Header = () => {
                     <div className="row align-items-center">
                         <ul className="nav nav-underline">
                             <li className="nav-item">
-                                <span className=" navbar-brand fs-6">
+                                <span className="navbar-brand fs-6">
                                     <Link to=""
                                         className="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                                        <i data-feather="gift" className="me-2 mb-2"></i>
+                                        <i data-feather="gift" className="me-2 mb-2" id="icon-header"></i>
                                         NOVEDADES
                                     </Link>
                                 </span>
@@ -21,7 +21,7 @@ const Header = () => {
                                 <span className=" navbar-brand fs-6">
                                     <Link to="/catalogo"
                                         className="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                                        <i data-feather="smartphone" className="me-2 mb-2"></i>
+                                        <i data-feather="smartphone" className="me-2 mb-2" id="icon-header"></i>
                                         CATÁLOGO
                                     </Link>
                                 </span>
@@ -40,7 +40,7 @@ const Header = () => {
                                 <span className=" navbar-brand fs-6">
                                     <Link to="/conocenos"
                                         className="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                                        <i data-feather="plus-square" className="me-2 mb-2"></i>
+                                        <i data-feather="plus-square" className="me-2 mb-2" id="icon-header"></i>
                                         CONÓCENOS
                                     </Link>
                                 </span>
@@ -49,7 +49,7 @@ const Header = () => {
                                 <span className=" navbar-brand fs-6">
                                     <Link to="/contactanos"
                                         className="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                                        <i data-feather="mail" className="me-2 mb-2"></i>
+                                        <i data-feather="mail" className="me-2 mb-2" id="icon-header"></i>
                                         CONTÁCTANOS
                                     </Link>
                                 </span>

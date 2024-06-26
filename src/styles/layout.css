@@ -3,23 +3,47 @@
     background: #1D1A6B;
     border-radius: 35px;
     max-width: 90%;
-    margin-bottom: 15px;
+    margin-bottom: 15px; 
 }
+
 .cormorant-logo-text-style {
     font-family: "Cormorant", serif;
     font-weight: 500;
     font-size: 60px;
-    text-decoration: none;
+    text-decoration: none; 
 }
+
 .nav-underline {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-}
+} 
 #logo {
     width: 5%;
-    height: 5%;
+    height: 5%; 
+}
+
+@media (max-width: 1268px) { 
+    .header-container-style {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .cormorant-logo-text-style { 
+        font-size: 30px; 
+    }
+    .link-light{
+        font-size: 10px; 
+    }
+    .icon-header{
+        width: 20%;
+        height: 20%;
+    }
+    #logo {
+        width: 3.5%;
+        height: 3.5%;
+    }
 }
 
 /*footer.js*/

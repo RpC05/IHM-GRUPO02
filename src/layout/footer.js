@@ -7,7 +7,7 @@ const Footer = () => {
             <div>Todos los derechos reservados</div>
             <Link to="/terminos"
                 class="text-light">
-                <i data-feather="book" class="me-2 mb-2"></i>
+                <i data-feather="book" className="me-2 mb-2"></i>
                 Términos y Condiciones
             </Link>
         </div>
