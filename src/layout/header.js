@@ -38,7 +38,7 @@ const Header = () => {
 
                             <li className="nav-item">
                                 <span className=" navbar-brand fs-6">
-                                    <Link to=""
+                                    <Link to="/conocenos"
                                         className="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
                                         <i data-feather="plus-square" className="me-2 mb-2"></i>
                                         CONÓCENOS
@@ -47,7 +47,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item" >
                                 <span className=" navbar-brand fs-6">
-                                    <Link to=""
+                                    <Link to="/contactanos"
                                         className="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
                                         <i data-feather="mail" className="me-2 mb-2"></i>
                                         CONTÁCTANOS

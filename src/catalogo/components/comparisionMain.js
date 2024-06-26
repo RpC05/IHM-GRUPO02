@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { phones } from '../data/phones.js';
-import '../../styles/layout.css';
+import { phones } from '../data/phones.js'; 
 import '../../styles/components.css';
 import Card from './card.js';
 import Comparison from './comparison.js';

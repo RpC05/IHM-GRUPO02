@@ -8,8 +8,9 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Basic from './layout/basic.js';
 import Home from './home/home.js';
 import Comparacion from './catalogo/components/comparisionMain.js';
-//import Conocenos from './conocenos/conocenos.js';
-//import Contactanos from './contactanos/contactanos.js';
+import Conocenos from './conocenos/conocenos.js';
+import Terminos from './terminos/terminos.js';
+import Contactanos from './contactanos/contactanos.js';
 
 const feather = require('feather-icons');
 
@@ -29,19 +30,19 @@ const router = createBrowserRouter([
             {
                 path: '/catalogo',
                 element: <Comparacion  />,
-            },/*
-            {
-                path: 'Conocenos',
-                element: <Conocenos/>
-            }, 
-            {
-                path: 'Contactanos',
-                element: <Contactanos/>
             },
             {
-                path: 'Politicas de Privacidad',
-                element: <Politicas/>
-            },*/
+                path: '/conocenos',
+                element: <Conocenos/>
+            },
+            {
+                path: '/terminos',
+                element: <Terminos/>
+            }, 
+            {
+                path: '/contactanos',
+                element: <Contactanos/>
+            }, 
         ],
     },
 ]);

@@ -1,5 +1,4 @@
-import React from 'react';
-import '../../styles/layout.css';
+import React from 'react'; 
 import '../../styles/components.css';
 
 const Card = ({ phone, onSelect, isSelected }) => {
