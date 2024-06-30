@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { phones } from '../data/phones.js'; 
+import { phones } from '../data/phones.js';
 import '../../styles/components.css';
 import Card from './card.js';
 import Comparison from './comparison.js';
@@ -22,24 +22,32 @@ const Comparacion = () => {
 
   return (
     <main>
-      <h1>COMPARACIÓN DE TELÉFONOS MÓVILES</h1>
-      <div className='Container-list'>
-        <div className="phone-list">
-          {phones.map(phone => (
-            <Card
-              key={phone.id}
-              phone={phone}
-              onSelect={handleSelect}
-              isSelected={selectedPhones.includes(phone)}
-            />
-          ))}
+
+      <div className="container text-center">
+        <div className="col">
+          <h1>COMPARACIÓN DE TELÉFONOS MÓVILES</h1>
+        </div>
+        <div className="col">
+          <div className="row align-items-center">
+            <div className='Container-list'>
+              <div className="phone-list">
+                {phones.map(phone => (
+                  <Card
+                    key={phone.id}
+                    phone={phone}
+                    onSelect={handleSelect}
+                    isSelected={selectedPhones.includes(phone)}
+                  />
+                ))}
+              </div>
+            </div> 
+          </div>
+          <Comparison phone1={selectedPhones[0]} phone2={selectedPhones[1]} />
         </div>
       </div>
-      <Comparison phone1={selectedPhones[0]} phone2={selectedPhones[1]} />
     </main>
   );
 };
 
 export default Comparacion;
 
- 
