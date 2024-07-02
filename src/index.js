@@ -12,6 +12,7 @@ import Conocenos from './conocenos/conocenos.js';
 import Terminos from './terminos/terminos.js';
 import Contactanos from './contactanos/contactanos.js';
 import Novedades from './novedades/novedades.js';
+import Single from './novedades/single';
 
 const feather = require('feather-icons');
 
@@ -47,7 +48,11 @@ const router = createBrowserRouter([
             {
                 path: '/contactanos',
                 element: <Contactanos/>
-            },  
+            }, 
+            {
+                path: "detalle/:slug",
+                element: <Single />,
+            }, 
         ],
     },
 ]);
