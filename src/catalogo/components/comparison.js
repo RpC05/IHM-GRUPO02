@@ -19,7 +19,6 @@ const Comparison = ({ phone1, phone2 }) => {
                 <img src={phone1.image} alt={phone1.name} />
                 <h3>{phone1.name}</h3>
               </div>
- 
                 {Object.keys(phone1.specs).map((key) => (
                   <li key={key}>
                     {key}: {phone1.specs[key]}

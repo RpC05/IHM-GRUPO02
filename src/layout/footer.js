@@ -13,27 +13,28 @@ const Footer = () => {
 
                     <div class="col mb-3 ">
                         <h5>Home</h5>
+                        <br></br>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <Link to="/terminos" class="nav-link p-0 text-body-secondary">
+                                <Link to="/" class="nav-link p-0 text-body-secondary">
                                     <i data-feather="gift" className="me-2 mb-2"></i>
                                     Novedades
                                 </Link>
                             </li>
                             <li class="nav-item mb-2">
-                                <Link to="/terminos" class="nav-link p-0 text-body-secondary">
+                                <Link to="/catalogo" class="nav-link p-0 text-body-secondary">
                                     <i data-feather="smartphone" className="me-2 mb-2"></i>
                                     Catálogo
                                 </Link>
                             </li>
                             <li class="nav-item mb-2">
-                                <Link to="/terminos" class="nav-link p-0 text-body-secondary">
+                                <Link to="/conocenos" class="nav-link p-0 text-body-secondary">
                                     <i data-feather="plus-square" className="me-2 mb-2"></i>
                                     Conócenos
                                 </Link>
                             </li>
                             <li class="nav-item mb-2">
-                                <Link to="/terminos" class="nav-link p-0 text-body-secondary">
+                                <Link to="/contactanos" class="nav-link p-0 text-body-secondary">
                                     <i data-feather="mail" className="me-2 mb-2"></i>
                                     Contáctanos
                                 </Link>
@@ -49,21 +50,22 @@ const Footer = () => {
 
                     <div class="col mb-3">
                         <h5>Redes sociales</h5>
+                        <br></br>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <Link to="/terminos" class="nav-link p-0 text-body-secondary">
+                                <Link to="/" class="nav-link p-0 text-body-secondary">
                                     <i data-feather="facebook" className="me-2 mb-2"></i>
                                     Facebook
                                 </Link>
                             </li>
                             <li class="nav-item mb-2">
-                                <Link to="/terminos" class="nav-link p-0 text-body-secondary">
+                                <Link to="/" class="nav-link p-0 text-body-secondary">
                                     <i data-feather="instagram" className="me-2 mb-2"></i>
                                     Instagram
                                 </Link>
                             </li>
                             <li class="nav-item mb-2">
-                                <Link to="/terminos" class="nav-link p-0 text-body-secondary">
+                                <Link to="/" class="nav-link p-0 text-body-secondary">
                                     <i data-feather="youtube" className="me-2 mb-2"></i>
                                     Youtube
                                 </Link>

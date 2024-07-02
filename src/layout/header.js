@@ -10,7 +10,7 @@ const Header = () => {
                         <ul className="nav nav-underline">
                             <li className="nav-item">
                                 <span className="navbar-brand fs-6">
-                                    <Link to=""
+                                    <Link to="/novedades"
                                         className="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
                                         <i data-feather="gift" className="me-2 mb-2" id="icon-header"></i>
                                         NOVEDADES

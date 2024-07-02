@@ -4,42 +4,34 @@
     gap: 32px;
     margin-top: 32px;
 }
-
 .phone-comparison div p {
     font-family: "Cormorant", serif;
     font-weight: 500;
     font-size: 18.5px;
 }
-
 .phone-comparison div h2 {
     font-family: "Cormorant", serif;
     font-weight: 520;
     color: #1D1A6B;
 }
-
 .phone-details {
     border: 1px solid #ccc;
     text-align: center;
     height: 100vh;
 }
- 
-
 .phone-details div img {
     max-width: 150px;
     height: auto;
     padding-top: 15px;
 }
-
 .phone-details div h3 {
     font-family: "Cormorant", serif;
     margin-top: 5px;
 }
-
 .phone-details li {
     font-family: "Cormorant", serif;
     list-style-type: none;
 }
-
 #col-phone-details {
     height: 100vh;
 }
@@ -56,24 +48,20 @@ h1 {
     background-color: #1e1d42 !important;
     transform: rotate(0deg) !important;
 }
-
 .phone-card img {
     max-width: 100px;
     height: auto;
     border-radius: 10px;
 }
-
 .phone-card input[type="checkbox"] {
     position: absolute;
     opacity: 0;
 }
-
 .phone-card h3 {
     font-family: "Cormorant", serif;
     font-size: 20px;
     margin: 5px;
 }
-
 .Container-list {
     height: 100%;
     width: 100%;
@@ -135,7 +123,6 @@ h1 {
     grid-template-columns: repeat(6, 1fr);
     gap: 0.75rem;
 }
-
 @media (max-width: 1268px) {  
     .phone-list { 
         grid-template-columns: repeat(4, 1fr); 
@@ -151,13 +138,11 @@ h1 {
         grid-template-columns: repeat(1, 1fr); 
     }
 }
-
 .phone-list:hover>.phone-card:hover {
     transform: scale(1.15);
     box-shadow: 0 0 10px #1D1A6B;
     z-index: 10;
 }
-
 .phone-list:hover>.phone-card:not(:hover) {
     opacity: 0.5;
 }
@@ -172,49 +157,41 @@ h1 {
     height: 356.25px;
     overflow: visible;
 }
-
 .RadarChart__scale {
     stroke: grey;
     stroke-width: 1;
     fill: none;
 }
-
 .RadarChart__axis {
     stroke: grey;
     stroke-width: 1;
     fill: none;
 }
-
 .RadarChart__shape {
     fill: url(#blue-gradient);
     fill-opacity: 0.5;
     stroke: url(#blue-gradient);
     stroke-width: 2;
 }
-
 .RadarChart__captions {
     font-size: 12px;
     fill: #333;
     border: 1px black solid;
 }
-
 .RadarChart__dot {
     fill: #3c59fc;
     stroke: #fff;
     stroke-width: 2;
     r: 4;
 }
-
 .stop-0 {
     stop-color: rgb(99, 102, 241);
     stop-opacity: 1;
 }
-
 .stop-100 {
     stop-color: rgb(163, 101, 241);
     stop-opacity: 1;
 }
-
 .RadarChart__groupButtons {
     margin-top: 8px;
     display: flex;
@@ -222,7 +199,6 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-
 .VsIcon__icon___3m84T {
     background-color: #f4f4f4;
     border-bottom: 2px solid #888;
@@ -235,7 +211,6 @@ h1 {
     position: relative;
     margin-top: 2px;
 }
-
 .VsIcon__icon___3m84T svg {
     padding: 3px;
 }

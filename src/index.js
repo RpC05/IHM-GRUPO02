@@ -11,6 +11,7 @@ import Comparacion from './catalogo/components/comparisionMain.js';
 import Conocenos from './conocenos/conocenos.js';
 import Terminos from './terminos/terminos.js';
 import Contactanos from './contactanos/contactanos.js';
+import Novedades from './novedades/novedades.js';
 
 const feather = require('feather-icons');
 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home />
+            },
+            {
+                path: '/novedades',
+                element: <Novedades />
             },
             {
                 path: '/catalogo',
