@@ -43,6 +43,7 @@ const Contactanos = () => {
                                 <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
+                            <button class="btn success">Enviar</button>
                         </div>
                     </div>
                 </div>

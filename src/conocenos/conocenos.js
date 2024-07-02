@@ -9,7 +9,7 @@ const Conocenos = () => {
                 <div className="container text-center">
                     <div className="row align-items-center">
                         <div className="col">
-                            <div>aqui van imagenes</div>
+                        <img src="https://gestion.pe/resizer/-zJhy4XUAZ-SxKlV0ptPS5mvIA4=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/X4J2Z6XQUZDO7O6QTDF4DIJ3VE.jpeg" ></img>
                         </div>
                         <div className="col">
                             <div className="col">

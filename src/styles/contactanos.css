@@ -1,3 +1,21 @@
 .col p {
     font-style: oblique;
-} 
+}
+
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    background-color: #1D1A6B;
+}
+
+.btn:hover { 
+    border: 1px black solid;
+}
