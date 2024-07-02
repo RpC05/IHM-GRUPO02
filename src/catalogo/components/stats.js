@@ -54,6 +54,8 @@ const Stats = ({ stats }) => {
                   <path d={`M${points.join('L')}z`} className="RadarChart__shape"></path>
                 </g>
                 <g>
+                <span className="VsIcon__icon___3m84T"> 
+                </span>
                   <text x="0.0000" y="-169.2188" dy="6" textAnchor="middle" className="RadarChart__captions">Diseño</text>
                   <text x="119.6557" y="-119.6557" dy="6" textAnchor="middle" className="RadarChart__captions">Pantalla</text>
                   <text x="169.2188" y="0.0000" dy="6" textAnchor="middle" className="RadarChart__captions">Rendimiento</text>

@@ -48,7 +48,29 @@
 
 /*footer.js*/
 .footer-container-style {
-    background: #1D1A6B;
-    color: #FFFFFF;
+    background: #1D1A6B; /* Dark background color */ 
     margin-top: 15px;
+    border-top: 1px solid rgb(73, 80, 87); /* Border top */  
+    
+} 
+.footer-content {
+    max-width: 80%;  
+    margin: 0 auto; 
+} 
+.footer-container-style .col h5 {
+    color: white !important;  
+}
+.footer-container-style .nav-link {
+    color: white !important;  
+    text-decoration: none !important;
+}
+.footer-container-style .nav-link:hover {
+    color: rgb(124, 124, 124) !important;
+}
+.footer-container-style .text-body-secondary {
+    color: white !important;  
+}  
+#logo-footer {
+    width: 25%;
+    height: 35%; 
 }

@@ -22,22 +22,20 @@
     text-align: center;
     height: 100vh;
 }
+ 
 
-.phone-details img {
-    margin-top: 15px;
-}
-
-.phone-details img {
+.phone-details div img {
     max-width: 150px;
     height: auto;
+    padding-top: 15px;
 }
 
-.phone-details h3 {
+.phone-details div h3 {
     font-family: "Cormorant", serif;
     margin-top: 5px;
 }
 
-.phone-details ul {
+.phone-details li {
     font-family: "Cormorant", serif;
     list-style-type: none;
 }
@@ -240,4 +238,10 @@ h1 {
 
 .VsIcon__icon___3m84T svg {
     padding: 3px;
+}
+.score-tooltip{
+    font-family: "Cormorant", serif;
+    font-weight: 700;
+    font-size: 18.5px;
+    color: #1D1A6B;
 }

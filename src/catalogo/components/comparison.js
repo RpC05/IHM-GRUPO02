@@ -19,14 +19,12 @@ const Comparison = ({ phone1, phone2 }) => {
                 <img src={phone1.image} alt={phone1.name} />
                 <h3>{phone1.name}</h3>
               </div>
-
-              <ul>
+ 
                 {Object.keys(phone1.specs).map((key) => (
                   <li key={key}>
                     {key}: {phone1.specs[key]}
                   </li>
-                ))}
-              </ul>
+                ))} 
               <Stats stats={phone1.stats} />
             </div>
           </div>
@@ -35,14 +33,12 @@ const Comparison = ({ phone1, phone2 }) => {
               <div>
                 <img src={phone2.image} alt={phone2.name} />
                 <h3>{phone2.name}</h3>
-              </div>
-              <ul>
+              </div> 
                 {Object.keys(phone2.specs).map((key) => (
                   <li key={key}>
                     {key}: {phone2.specs[key]}
                   </li>
-                ))}
-              </ul>
+                ))} 
               <Stats stats={phone2.stats} />
             </div>
           </div>

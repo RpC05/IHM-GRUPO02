@@ -197,7 +197,7 @@ export const phones = [
   {
     id: 7,
     name: 'Huawei Honor View 20',
-    image: '/images/huaweiHonorView20.jpeg',
+    image: '/images/huaweiHonorView20.jpg',
     specs: {
       Pantalla: '6.26 pulgadas',
       Batería: '4000 mAh',
