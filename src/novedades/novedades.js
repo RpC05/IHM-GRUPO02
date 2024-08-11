@@ -15,13 +15,12 @@ const Novedades = () => {
             <novedades>
                 <Carousel>
                     {
-                        upao.map(it => {
+                        phones.map(it => {
                             return (<Carousel.Item onClick={(e) => {
                                 e.preventDefault(); handleClick(it.slug)
                             }}>
                                 <div>
-                                <img className='w-100 dark-image' src={it.picture}></img>
-
+                                    <img className='w-100 dark-image' src={it.picture}></img>
                                 </div>
                                 <Carousel.Caption>
                                     <h3 className="title-carousel text-light fw-medium">{it.name}</h3>
@@ -37,25 +36,25 @@ const Novedades = () => {
     );
 }
 
-const upao = [
+const phones = [
     {
-      name: "Apple presenta el iPhone 15 Pro",
-      slug: 'upao-1',
-      description: "El iPhone 15 Pro y el iPhone 15 Pro Max estarán disponibles en cuatro magníficos acabados: titanio negro, titanio blanco, titanio azul y titanio natural. Las reservas empezarán el viernes, 15 de septiembre, y los modelos estarán disponibles el viernes, 22 de septiembre...",
-      picture: '../../images2/iphone15pro.png'
+        name: "Apple presenta el iPhone 15 Pro",
+        slug: 'phone-1',
+        description: "El iPhone 15 Pro y el iPhone 15 Pro Max estarán disponibles en cuatro magníficos acabados: titanio negro, titanio blanco, titanio azul y titanio natural. Las reservas empezarán el viernes, 15 de septiembre, y los modelos estarán disponibles el viernes, 22 de septiembre...",
+        picture: '../../images2/iphone15pro.png'
     },
     {
-      name: "Xiaomi reinventa como nunca su buque insignia",
-      slug: 'upao-2',
-      description: "Xiaomi acaba de anunciar su buque insignia de 2024 en China. Tenemos ante nosotros un espectacular Xiaomi 14 Ultra que refuerza la apuesta del año pasado con un procesador más potente y una pantalla más brillante que nunca...",
-      picture: '../../images2/xiaomi14ultra.jpg'
+        name: "Xiaomi reinventa como nunca su buque insignia",
+        slug: 'phone-2',
+        description: "Xiaomi acaba de anunciar su buque insignia de 2024 en China. Tenemos ante nosotros un espectacular Xiaomi 14 Ultra que refuerza la apuesta del año pasado con un procesador más potente y una pantalla más brillante que nunca...",
+        picture: '../../images2/xiaomi14ultra.jpg'
     },
     {
-      name: "Samsung Galaxy A55 llega a 5G",
-      slug: 'upao-3',
-      description: "El Samsung Galaxy A55 tiene una apariencia bastante premium, que llega gracias en parte a cambios en sus materiales de construcción. El aluminio reemplaza el plástico en este modelo, brindándonos una sensación de teléfono de gama más alta...",
-      picture: '../../images2/galaxya55.png'
+        name: "Samsung Galaxy A55 llega a 5G",
+        slug: 'phone-3',
+        description: "El Samsung Galaxy A55 tiene una apariencia bastante premium, que llega gracias en parte a cambios en sus materiales de construcción. El aluminio reemplaza el plástico en este modelo, brindándonos una sensación de teléfono de gama más alta...",
+        picture: '../../images2/galaxya55.png'
     },
-  ];
+];
 
 export default Novedades;
