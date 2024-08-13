@@ -12,7 +12,7 @@ import Conocenos from './conocenos/conocenos.js';
 import Terminos from './terminos/terminos.js';
 import Contactanos from './contactanos/contactanos.js';
 import Novedades from './novedades/novedades.js';
-import Single from './novedades/single';
+import Single from './novedades/single.js';
 
 const feather = require('feather-icons');
 
