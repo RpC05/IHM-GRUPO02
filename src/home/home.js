@@ -2,7 +2,7 @@ import React from 'react';
 import Basic from '../layout/basic.js';
 import '../styles/home.css';
 import Carousel1 from './carousel1.js';
-import Carousel2 from '/workspaces/IHM-GRUPO02/src/home/carousel2.js';
+import Carousel2 from './carousel2.js';
 
 const Home = () => {
     return (
