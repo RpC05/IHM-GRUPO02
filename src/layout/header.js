@@ -31,7 +31,7 @@ const Header = () => {
                                 <span className=" navbar-brand">
                                     <Link to="/"
                                         className="cormorant-logo-text-style text-light">
-                                        TECNO ALEX
+                                        TECNOLOGÍA
                                     </Link>
                                 </span>
                             </li>
